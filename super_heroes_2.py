@@ -6,7 +6,7 @@ response = requests.get(f'{url}/all.json')
 #     file.write(response.text)
 all_hero_info = response.json()
 super_heroes = {}
-heroes = [12, 13, 15]
+heroes = [222, 112, 113]
 for i in range(len(heroes)):
     for hero_info in all_hero_info:
         if hero_info['id'] == heroes[i]:
